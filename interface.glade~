@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Weather App</property>
+    <property name="window_position">center</property>
+    <property name="default_width">500</property>
+    <property name="default_height">450</property>
+    <property name="icon">weather-icons-master/svg/wi-day-cloudy-high.svg</property>
+    <property name="type_hint">menu</property>
+    <property name="gravity">north-east</property>
+    <child>
+      <object class="GtkNotebook" id="notebook1">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <child>
+          <object class="GtkLayout" id="layout1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_bottom">5</property>
+            <property name="width">500</property>
+            <property name="height">450</property>
+            <child>
+              <object class="GtkEntry" id="entry1">
+                <property name="width_request">230</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Enter a country (Nigeria)</property>
+              </object>
+              <packing>
+                <property name="x">146</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button1">
+                <property name="label" translatable="yes">Get weather</property>
+                <property name="width_request">104</property>
+                <property name="height_request">41</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="resize_mode">immediate</property>
+                <property name="yalign">0.60000002384185791</property>
+                <signal name="clicked" handler="on_button1_clicked" object="entry1" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">5</property>
+                <property name="y">9</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="Weather Status">
+                <property name="width_request">106</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Weather Status</property>
+              </object>
+              <packing>
+                <property name="x">7</property>
+                <property name="y">58</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="image1">
+                <property name="width_request">138</property>
+                <property name="height_request">106</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">weather-icons-master/svg/wi-day-cloudy-high.svg</property>
+              </object>
+              <packing>
+                <property name="y">107</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="zone_title">
+                <property name="width_request">100</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Timezone :</property>
+              </object>
+              <packing>
+                <property name="x">166</property>
+                <property name="y">91</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="summary_title">
+                <property name="width_request">100</property>
+                <property name="height_request">42</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Summary :</property>
+              </object>
+              <packing>
+                <property name="x">170</property>
+                <property name="y">135</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="zone_value">
+                <property name="width_request">100</property>
+                <property name="height_request">37</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">...</property>
+              </object>
+              <packing>
+                <property name="x">270</property>
+                <property name="y">95</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="summary_value">
+                <property name="width_request">100</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">...</property>
+              </object>
+              <packing>
+                <property name="x">269</property>
+                <property name="y">142</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">page 1</property>
+          </object>
+          <packing>
+            <property name="tab_fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLayout" id="layout2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_bottom">5</property>
+            <property name="width">500</property>
+            <property name="height">450</property>
+            <child>
+              <object class="GtkImage" id="graph">
+                <property name="width_request">396</property>
+                <property name="height_request">221</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">weather-icons-master/svg/wi-day-cloudy-high.svg</property>
+              </object>
+              <packing>
+                <property name="y">69</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="chart_label">
+                <property name="width_request">351</property>
+                <property name="height_request">27</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Weather Chart  describing 48hours of different temparatures</property>
+              </object>
+              <packing>
+                <property name="x">1</property>
+                <property name="y">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="button2">
+                <property name="label" translatable="yes">Plot </property>
+                <property name="width_request">108</property>
+                <property name="height_request">29</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button2_clicked" object="entry2" swapped="no"/>
+              </object>
+              <packing>
+                <property name="x">2</property>
+                <property name="y">35</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry2">
+                <property name="width_request">166</property>
+                <property name="height_request">33</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="placeholder_text" translatable="yes">Enter a country (Nigeria)</property>
+              </object>
+              <packing>
+                <property name="x">200</property>
+                <property name="y">33</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Chart</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+            <property name="tab_fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child type="tab">
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
